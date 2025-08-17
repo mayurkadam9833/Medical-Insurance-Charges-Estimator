@@ -1,0 +1,9 @@
+COLUMNS:
+ age: int64  
+ sex: object 
+ bmi: float64
+ children: int64  
+ smoker: object 
+ region: object
+TARGET_COLUMN: 
+ charges: float64
