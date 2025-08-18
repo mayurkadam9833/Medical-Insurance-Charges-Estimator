@@ -1,4 +1,4 @@
-from src.Insurance_Claim_Severity_Prediction.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig
+from src.Insurance_Claim_Severity_Prediction.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig,ModelTrainingconfig
 from src.Insurance_Claim_Severity_Prediction.constants import *
 from src.Insurance_Claim_Severity_Prediction.utils.common import read_yaml,create_dir
 
@@ -52,3 +52,23 @@ class ConfigManager:
             data_path=config.data_path
         )
         return data_transforming_config
+    
+    def get_model_trainer_config(self)-> ModelTrainingconfig:
+        config=self.config.model_trainer
+        schema=self.schema.TARGET_COLUMN
+        params=self.params.GradientBoostingRegressor
+
+        create_dir([config.root_dir])
+
+        model_trainer_config=ModelTrainingconfig(
+            root_dir=config.root_dir,
+            train_data_path=config.train_data_path,
+            test_data_path=config.test_data_path,
+            model_name=config.model_name,
+            n_estimators=params.n_estimators,
+            learning_rate=params.learning_rate,
+            max_depth=params.max_depth,
+            min_samples_leaf=params.min_samples_leaf,
+            min_samples_split=params.min_samples_split,
+            target_column=list(schema.keys())[0])
+        return model_trainer_config

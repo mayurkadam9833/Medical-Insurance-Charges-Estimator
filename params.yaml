@@ -1,1 +1,6 @@
-KEY: VAL
+GradientBoostingRegressor:
+ n_estimators: 80
+ learning_rate: 0.1
+ max_depth: 3
+ min_samples_leaf: 1
+ min_samples_split: 2
