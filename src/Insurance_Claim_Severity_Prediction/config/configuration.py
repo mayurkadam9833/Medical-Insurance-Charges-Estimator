@@ -1,4 +1,4 @@
-from src.Insurance_Claim_Severity_Prediction.entity.config_entity import DataIngestionConfig
+from src.Insurance_Claim_Severity_Prediction.entity.config_entity import DataIngestionConfig,DataValidationConfig
 from src.Insurance_Claim_Severity_Prediction.constants import *
 from src.Insurance_Claim_Severity_Prediction.utils.common import read_yaml,create_dir
 
@@ -28,4 +28,16 @@ class ConfigManager:
         )
         return data_ingestion_config
     
+    def get_data_validation_config(self)->DataValidationConfig:
+        config=self.config.data_validation
+        schema=self.schema.COLUMNS
+
+        create_dir([config.root_dir])
+
+        data_validation_config=DataValidationConfig(
+            root_dir=config.root_dir,
+            unzip_data_path=config.unzip_data_path,
+            STATUS_FILE=config. STATUS_FILE,
+            all_schema=schema)
         
+        return data_validation_config
