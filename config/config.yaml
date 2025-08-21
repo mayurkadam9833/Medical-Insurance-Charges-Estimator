@@ -1,28 +1,28 @@
-artifacts_root: artifacts 
+artifacts_root: artifacts                                        # main folder where all outputs/artifacts will be stored
 
 data_ingestion:
- root_dir: artifacts/data_ingestion
- source_url: https://github.com/mayurkadam9833/Datasets/raw/refs/heads/main/insurance.zip
- local_data_file: artifacts/data_ingestion/insurance.zip
- unzip_dir: artifacts/data_ingestion
+ root_dir: artifacts/data_ingestion                              # folder for data ingestion step
+ source_url: https://github.com/mayurkadam9833/Datasets/raw/refs/heads/main/insurance.zip    # link of dataset
+ local_data_file: artifacts/data_ingestion/insurance.zip         # downloaded zip file will be saved here
+ unzip_dir: artifacts/data_ingestion                             # after unzip the data will be here
 
 data_validation:
- root_dir: artifacts/data_validation
- unzip_data_path: artifacts/data_ingestion/insurance.csv
- STATUS_FILE: artifacts/data_validation/validation_status.txt
+ root_dir: artifacts/data_validation                             # folder for data validation step
+ unzip_data_path: artifacts/data_ingestion/insurance.csv         # dataset file path after unzip
+ STATUS_FILE: artifacts/data_validation/validation_status.txt    # file to store validation status
 
 data_transformation:
- root_dir: artifacts/data_transformation
- data_path: artifacts/data_ingestion/insurance.csv
+ root_dir: artifacts/data_transformation                         # folder for data transformation step
+ data_path: artifacts/data_ingestion/insurance.csv               # input csv file for transformation
 
 model_trainer:
- root_dir: artifacts/model_trainer
- train_data_path: artifacts/data_transformation/train.csv
- test_data_path: artifacts/data_transformation/test.csv
- model_name: model.joblib
+ root_dir: artifacts/model_trainer                               # folder for model training step
+ train_data_path: artifacts/data_transformation/train.csv        # training dataset path
+ test_data_path: artifacts/data_transformation/test.csv          # testing dataset path
+ model_name: model.joblib                                        # trained model will be saved with this name
 
 model_evalution:
- root_dir: artifacts/model_evalution
- test_data_path: artifacts/data_transformation/train.csv 
- model_path: artifacts/model_trainer/model.joblib 
- metric_file: artifacts/model_evalution/metric.json
+ root_dir: artifacts/model_evalution                             # folder for model evaluation step
+ test_data_path: artifacts/data_transformation/test.csv          # test dataset path 
+ model_path: artifacts/model_trainer/model.joblib                # trained model path for evaluation
+ metric_file: artifacts/model_evalution/metric.json              # file to save evaluation metrics
