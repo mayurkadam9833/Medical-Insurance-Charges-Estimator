@@ -3,7 +3,12 @@ numpy
 matplotlib
 seaborn
 joblib
-scikit-learn
+imblearn
+python-box
+scikit-learn==1.3
+config-box
+ensure
 xgboost
+pyyaml
 
 -e .
