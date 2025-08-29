@@ -49,7 +49,7 @@ class ConfigManager:
         data_validation_config=DataValidationConfig(
             root_dir=config.root_dir,
             unzip_data_path=config.unzip_data_path,
-            STATUS_FILE=config. STATUS_FILE,
+            STATUS_FILE=config.STATUS_FILE,
             all_schema=schema)
         return data_validation_config
     

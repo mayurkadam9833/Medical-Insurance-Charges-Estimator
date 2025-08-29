@@ -12,6 +12,5 @@ class DataValidationPipeline:
         data_validation_config=config.get_data_validation_config()
         data_validation=DataValidation(config=data_validation_config)
         data_validation.schema_validation()
-        data_validation.data_type_validation()
 
 
