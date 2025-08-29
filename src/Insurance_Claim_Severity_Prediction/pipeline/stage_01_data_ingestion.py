@@ -3,8 +3,7 @@ from src.Insurance_Claim_Severity_Prediction.components.data_ingestion import Da
 from src.Insurance_Claim_Severity_Prediction.logging import logger
 
 
-stage_one="Data Ingestion"
-
+# DataIngestionPipeline -> used to call data ingestion  download file and extract at defined file location
 class DataIngestionPipeline:
     def __init__(self):
         pass
@@ -17,12 +16,3 @@ class DataIngestionPipeline:
         data_ingestion.extract_file()
 
 
-if __name__ == "__main__":
-    try:
-        logger.info(f"<<<< stage: {stage_one} started")
-        obj=DataIngestionPipeline()
-        obj.main()
-        logger.info(f"stage: {stage_one} completed >>>>\n")
-    except Exception as e:
-        logger.info(e)
-        raise e

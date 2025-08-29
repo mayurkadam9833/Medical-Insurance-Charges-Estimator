@@ -2,7 +2,7 @@ import joblib
 from pathlib import Path
 import pandas as pd 
 
-
+# PredictionPipeline -> used to predict output in this prediction pipeline it will preprocess data and make prediction
 class PredictionPipeline:
     def __init__(self):
         self.sex_label_encode=joblib.load(Path("artifacts/data_transformation/sex_label_encode.joblib"))
@@ -11,6 +11,7 @@ class PredictionPipeline:
         self.scale=joblib.load(Path("artifacts/data_transformation/scale.joblib"))
         self.model=joblib.load(Path("artifacts/model_trainer/model.joblib"))
 
+    # method for preprocess data
     def preprocess(self,data:pd.DataFrame):
         data["sex"] = self.sex_label_encode.transform(data["sex"])
         data["smoker"] = self.smoker_label_encode.transform(data["smoker"])
@@ -19,6 +20,7 @@ class PredictionPipeline:
         data=self.scale.transform(data)
         return data
     
+    # method for prediction
     def prediction(self,data:pd.DataFrame):
         processed=self.preprocess(data)
         prediction=self.model.predict(processed)
