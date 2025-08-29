@@ -38,12 +38,12 @@ if st.button("Estimate Insurance Cost"):
         "children": [children],
         "smoker":[smoker],
         "region":[region]
-    })
+    })  # create data frame of input data
 
-    pred=PredictionPipeline()
+    pred=PredictionPipeline()  # create obj of prediction pipeline
 
-    prediction=pred.prediction(data)
+    prediction=pred.prediction(data)   # prediction on given data
 
-    st.success(f"💰 Estimated insurance charges:  {prediction[0]:.2f} $")
+    st.success(f"💰 Estimated insurance charges:  {prediction[0]:.2f} $") # print prediction value
 
 
