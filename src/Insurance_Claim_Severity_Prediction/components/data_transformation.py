@@ -9,6 +9,7 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 
+# DataTransformation class -> used to tranform data (data preprocessing, train test split)  
 class DataTransformation:
     def __init__(self,config:DataTransformationConfig):
         # store config object
