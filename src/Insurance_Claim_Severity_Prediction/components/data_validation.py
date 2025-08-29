@@ -10,9 +10,9 @@ class DataValidation:
     def schema_validation(self):
         try:
             schema_status=True
-            data=pd.read_csv(self.config.unzip_data_path) # read dataset
-            all_cols=list(data.columns)                   # get dataset column names
-            all_schema=self.config.all_schema.keys()      # schema column names
+            data=pd.read_csv(self.config.unzip_data_path)  # read dataset
+            all_cols=list(data.columns)                    # get dataset column names
+            all_schema=self.config.all_schema.keys()       # schema column names
 
             # loop through dataset columns and check against schema
             for col in all_cols:
@@ -20,8 +20,9 @@ class DataValidation:
                     continue
                 if col not in all_schema:
                     schema_status=False
-                    with open(self.config.STATUS_FILE,"w")as file:
-                        file.write(f"schema status: {schema_status}")
+                    
+                with open(self.config.STATUS_FILE,"w")as file:
+                    file.write(f"schema status: {schema_status}")
 
         except Exception as e:
             raise e
