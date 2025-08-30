@@ -1,1 +1,1 @@
-# Insurance-Claim-Severity-Prediction
+The goal was to build a regression model that predicts the severity of an insurance claim based on customer and claim features. Accurate predictions can help insurers in risk assessment, pricing, and resource allocation.
