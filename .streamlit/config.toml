@@ -1,6 +1,6 @@
 [theme]
 primaryColor = "#3B82F6"        # Blue (buttons, sliders, highlights)
 backgroundColor = "#F8FBFF"     # Very light blue background
-secondaryBackgroundColor = "#FFFFFF"  # White cards/containers
+secondaryBackgroundColor = "#93BCD2"  # White cards/containers
 textColor = "#1E293B"           # Dark navy text
 font = "sans serif"
