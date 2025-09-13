@@ -1,7 +1,7 @@
 {
-    "r2_score": 0.8795356375706068,
-    "adjusted r2 score": 0.8753333923695815,
-    "mean squared error": 18701939.457128547,
-    "mean absolute error": 2400.758193112701,
-    "root mean squared error": 4324.573904690327
+    "r2_score": 0.8794998171845341,
+    "adjusted r2 score": 0.8752963224351573,
+    "mean squared error": 18707500.526627887,
+    "mean absolute error": 2401.603450185945,
+    "root mean squared error": 4325.216818452907
 }
