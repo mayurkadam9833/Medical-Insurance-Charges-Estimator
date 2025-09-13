@@ -6,7 +6,7 @@ from pathlib import Path
 logging.basicConfig(level=logging.INFO,format="[%(asctime)s : %(message)s]")
 
 # Define the project name (used for folder structure)
-project_name="Insurance_Claim_Severity_Prediction"
+project_name="Medical_Insurance_Charges_Estimator"
 
 # List of files & directories to create for the project
 list_of_files=[
