@@ -26,4 +26,4 @@ logging.basicConfig(
 )
 
 # Create logger object for the project
-logger=logging.getLogger("Insurance_claim_severity_prediction")
+logger=logging.getLogger("Medical_Insurance_Charges_Estimator")
