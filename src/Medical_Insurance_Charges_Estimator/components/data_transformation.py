@@ -2,8 +2,8 @@ import os
 import pandas as pd 
 import numpy as np 
 import joblib
-from src.Insurance_Claim_Severity_Prediction.logging import logger
-from src.Insurance_Claim_Severity_Prediction.entity.config_entity import DataTransformationConfig
+from src.Medical_Insurance_Charges_Estimator.logging import logger
+from src.Medical_Insurance_Charges_Estimator.entity.config_entity import DataTransformationConfig
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import StandardScaler

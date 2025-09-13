@@ -1,6 +1,6 @@
-from src.Insurance_Claim_Severity_Prediction.logging import logger
-from src.Insurance_Claim_Severity_Prediction.config.configuration import ConfigManager
-from src.Insurance_Claim_Severity_Prediction.components.model_trainer import ModelTrainer
+from src.Medical_Insurance_Charges_Estimator.logging import logger
+from src.Medical_Insurance_Charges_Estimator.config.configuration import ConfigManager
+from src.Medical_Insurance_Charges_Estimator.components.model_trainer import ModelTrainer
 
 # ModelTrainerPipeline -> used for calling model training config and methods
 class ModelTrainerPipeline:

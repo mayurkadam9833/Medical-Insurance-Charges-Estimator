@@ -3,8 +3,8 @@ import joblib
 import pandas as pd 
 import numpy as np
 from sklearn.ensemble import GradientBoostingRegressor
-from src.Insurance_Claim_Severity_Prediction.logging import logger
-from src.Insurance_Claim_Severity_Prediction.config.configuration import ModelTrainingconfig
+from src.Medical_Insurance_Charges_Estimator.logging import logger
+from src.Medical_Insurance_Charges_Estimator.config.configuration import ModelTrainingconfig
 
 # ModelTrainer class -> used to train model 
 class ModelTrainer:

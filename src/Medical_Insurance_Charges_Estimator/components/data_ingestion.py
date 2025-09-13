@@ -1,9 +1,9 @@
 import os
 import zipfile
 from urllib.request import urlretrieve
-from src.Insurance_Claim_Severity_Prediction.logging import logger
-from src.Insurance_Claim_Severity_Prediction.entity.config_entity import DataIngestionConfig
-from src.Insurance_Claim_Severity_Prediction.utils.common import get_size
+from src.Medical_Insurance_Charges_Estimator.logging import logger
+from src.Medical_Insurance_Charges_Estimator.entity.config_entity import DataIngestionConfig
+from src.Medical_Insurance_Charges_Estimator.utils.common import get_size
 
 # DataIngestion class -> used to download and extract dataset
 class DataIngestion:

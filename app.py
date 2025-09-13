@@ -1,14 +1,14 @@
 import streamlit as st 
 import pandas as pd 
-from src.Insurance_Claim_Severity_Prediction.pipeline.prediction import PredictionPipeline
+from src.Medical_Insurance_Charges_Estimator.pipeline.prediction import PredictionPipeline
 
 
 # App title 
-st.title("Insurance Claim Severity Estimator")
+st.title("Medical Insurance Charges Estimator")
 
 # Description in Markdown
 st.markdown("""
-Welcome to the **Insurance Cost Calculator**! 🏥💰  
+Welcome to the **Medical Insurance Cost Calculator**! 🏥💰  
 
 This app allows you to estimate your insurance charges based on the following inputs:
 - Age

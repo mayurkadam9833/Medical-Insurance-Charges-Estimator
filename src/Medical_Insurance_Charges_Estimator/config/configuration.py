@@ -1,6 +1,6 @@
-from src.Insurance_Claim_Severity_Prediction.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig,ModelTrainingconfig,ModelEvaluationConfig
-from src.Insurance_Claim_Severity_Prediction.constants import *
-from src.Insurance_Claim_Severity_Prediction.utils.common import read_yaml,create_dir
+from src.Medical_Insurance_Charges_Estimator.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig,ModelTrainingconfig,ModelEvaluationConfig
+from src.Medical_Insurance_Charges_Estimator.constants import *
+from src.Medical_Insurance_Charges_Estimator.utils.common import read_yaml,create_dir
 
 """
 ConfigManager class is responsible for reading config, schema and params yaml files

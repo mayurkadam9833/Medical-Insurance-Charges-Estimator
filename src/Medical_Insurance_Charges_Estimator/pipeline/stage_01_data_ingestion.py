@@ -1,6 +1,6 @@
-from src.Insurance_Claim_Severity_Prediction.config.configuration import ConfigManager
-from src.Insurance_Claim_Severity_Prediction.components.data_ingestion import DataIngestion
-from src.Insurance_Claim_Severity_Prediction.logging import logger
+from src.Medical_Insurance_Charges_Estimator.config.configuration import ConfigManager
+from src.Medical_Insurance_Charges_Estimator.components.data_ingestion import DataIngestion
+from src.Medical_Insurance_Charges_Estimator.logging import logger
 
 
 # DataIngestionPipeline -> used to call data ingestion  download file and extract at defined file location

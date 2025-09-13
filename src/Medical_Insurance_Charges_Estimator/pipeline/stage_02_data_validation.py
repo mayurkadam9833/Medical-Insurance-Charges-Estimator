@@ -1,6 +1,6 @@
-from src.Insurance_Claim_Severity_Prediction.config.configuration import ConfigManager
-from src.Insurance_Claim_Severity_Prediction.components.data_validation import DataValidation
-from src.Insurance_Claim_Severity_Prediction.logging import logger
+from src.Medical_Insurance_Charges_Estimator.config.configuration import ConfigManager
+from src.Medical_Insurance_Charges_Estimator.components.data_validation import DataValidation
+from src.Medical_Insurance_Charges_Estimator.logging import logger
 
 # DataValidationPipeline -> used for calling data valiadtion config and method
 class DataValidationPipeline:

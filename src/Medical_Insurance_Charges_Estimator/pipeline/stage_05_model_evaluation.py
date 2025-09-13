@@ -1,6 +1,6 @@
-from src.Insurance_Claim_Severity_Prediction.config.configuration import ConfigManager
-from src.Insurance_Claim_Severity_Prediction.components.model_evaluation import ModelEvalution
-from src.Insurance_Claim_Severity_Prediction.logging import logger
+from src.Medical_Insurance_Charges_Estimator.config.configuration import ConfigManager
+from src.Medical_Insurance_Charges_Estimator.components.model_evaluation import ModelEvalution
+from src.Medical_Insurance_Charges_Estimator.logging import logger
 
 
 

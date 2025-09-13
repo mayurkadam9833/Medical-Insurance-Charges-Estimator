@@ -3,8 +3,8 @@ import joblib
 import pandas as pd 
 from pathlib import Path
 from sklearn.metrics import r2_score,mean_squared_error,mean_absolute_error,root_mean_squared_error
-from src.Insurance_Claim_Severity_Prediction.entity.config_entity import ModelEvaluationConfig
-from src.Insurance_Claim_Severity_Prediction.utils.common import save_json
+from src.Medical_Insurance_Charges_Estimator.entity.config_entity import ModelEvaluationConfig
+from src.Medical_Insurance_Charges_Estimator.utils.common import save_json
 
 # ModelEvalution class -> used to evaluation of model  
 class ModelEvalution:

@@ -1,5 +1,5 @@
 import pandas as pd
-from src.Insurance_Claim_Severity_Prediction.entity.config_entity import DataValidationConfig
+from src.Medical_Insurance_Charges_Estimator.entity.config_entity import DataValidationConfig
 
 # DataValidation class -> used to validate dataset schema and datatypes
 class DataValidation:

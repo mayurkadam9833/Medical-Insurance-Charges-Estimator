@@ -5,7 +5,7 @@ from pathlib import Path
 from box import ConfigBox
 from box.exceptions import BoxValueError
 from ensure import ensure_annotations
-from src.Insurance_Claim_Severity_Prediction.logging import logger
+from src.Medical_Insurance_Charges_Estimator.logging import logger
 
 # Function to read YAML file and return contents as ConfigBox (dict-like object)
 @ensure_annotations

@@ -1,6 +1,6 @@
-from src.Insurance_Claim_Severity_Prediction.logging import logger
-from src.Insurance_Claim_Severity_Prediction.config.configuration import ConfigManager
-from src.Insurance_Claim_Severity_Prediction.components.data_transformation import DataTransformation
+from src.Medical_Insurance_Charges_Estimator.logging import logger
+from src.Medical_Insurance_Charges_Estimator.config.configuration import ConfigManager
+from src.Medical_Insurance_Charges_Estimator.components.data_transformation import DataTransformation
 
 # DataTransformationPipeline -> used for calling data transformation config and method
 class DataTransformationPipeline:
